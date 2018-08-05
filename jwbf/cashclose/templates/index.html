@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Home</h1>
+  <p>Welcome to Cash Close, a website developed by <em>Theocharoulis Kostas</em>!</p>
+
+  <h2>Dynamic content</h2>
+  <p>The Cash-Close has the following record counts:</p>
+  <ul>
+    <li><strong>Closed Statements:</strong> {{ num_statements }}</li>
+  </ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Statement List</h1>
+  {% if statement_list %}
+  <ul>
+    {% for statement in statement_list %}
+      <li>
+      <a href="{{ statement.get_absolute_url }}">{{ statement.working_date }} ({{statement.store}}) </a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no statements in the library.</p>
+  {% endif %}
+{% endblock %}

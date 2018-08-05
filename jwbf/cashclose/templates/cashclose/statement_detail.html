@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Working Date: {{ statement.working_date }}</h1>
+  <p><strong>writer:</strong> {{ statement.writer }}</p>
+  <p><strong>store:</strong> {{ statement.store }}</p>
+  <p><strong>turnover:</strong> {{ statement.turnover }}</p>
+  <p><strong>cash_money:</strong> {{ statement.cash_money }}</p>
+  <p><strong>bank_money:</strong> {{ statement.bank_money }}</p>
+  <p><strong>expenses:</strong> {{ statement.expenses }}</p>
+
+{% endblock %}
